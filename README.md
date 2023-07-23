@@ -46,5 +46,6 @@ or by pressing:
 ```
 Super + Shift + i 
 ```
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
 Happy tiling! 🪶💻🐍
