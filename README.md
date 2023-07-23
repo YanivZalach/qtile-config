@@ -10,7 +10,7 @@ Who can you use it? Anyone can use it!
 
 Who should use it? those who want to start learning about tiling window managers in Linux, as well as advanced users.
 
-![Qtile system](system_pic.png)
+![system_pic](https://github.com/YanivZalach/qtile-config/assets/131461377/6a9460f3-54a3-4087-918f-759057a085c4)
 
 ## Requirements 🛠️
 
