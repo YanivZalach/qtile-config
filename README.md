@@ -9,6 +9,7 @@ Who can you use it? Anyone can use it!
 
 Who should use it? those who want to start learning about tiling window managers in Linux, as well as advanced users.
 
+![Image Alt Text](system_pic.png)
 
 ## Requirements 🛠️
 
