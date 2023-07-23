@@ -48,4 +48,8 @@ Super + Shift + i
 ```
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
-Happy tiling! 🪶💻🐍
+## Acknowledgments 🙏
+thanks to the Qtile community for their support.
+
+
+### Happy tiling! 🪶💻🐍
