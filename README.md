@@ -24,17 +24,29 @@ Before using this Qtile configuration, if you don't want to start configuring th
 
 1. Install the required programs listed above using your package manager or download them from their respective websites.
 
-2. Clone this repository to your local machine:
+2. Open a terminal emulator by pressing:
+  ```
+  Super + Enter
+  ```
+  Note: The Super key is typically the "Windows" key on most keyboards.
+  
+3. Copy the config file, by copy and paste the following command into the terminal and press 'enter':
 
-```bash
-git clone https://github.com/YanivZalach/qtile.git ~/.config/qtile
-```
+  ```bash
+  git clone https://github.com/YanivZalach/qtile.git ~/.config/qtile
+  ```
 
-Restart Qtile to apply the new configuration by pressing:
+4. Restart Qtile to apply the new configuration by pressing:
 
-```
-Super + control + r
-```
+  ```
+  Super + control + r
+  ```
+
+5. Enable the autostart applications and the shutdown menu, by copy and paste the following command into the terminal and press 'enter':
+  ```bash
+  chmod +x ~/.config/qtile/autostart.sh
+  chmod +x ~/.config/qtile/ro_sd.sh
+  ```
 
 ## Usage 🚀
 
@@ -43,9 +55,36 @@ Check the keybindings in the generated Mqtile.pdf file for a quick reference, by
 or by pressing:
 
 ```
-Super + Shift + i 
+Super + shift + i 
 ```
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+
+## Troubleshooting 🔧
+
+The installation is not working:
+
+* Make sure you have Git installed on your computer.
+  Open the terminal and run the following command:
+  ```bash
+  git --version
+  ```
+  If Git is installed, you will see the installed version. If not, you need to install it using your package manager.
+  Then retry the Installation.
+  
+* Check if the ~/.config/qtile directory already exists.
+  Open the terminal and run the following command to check if the directory exists:
+  ```bash
+  ls ~/.config/qtile
+  ```
+  If the directory is found, you need to proceed with backing it up or renaming it.
+  Do so by open the terminal and run the following command:
+  ```bash
+  mv ~/.config/qtile ~/.config/qtile_backup
+  ```
+  This will rename the existing 'qtile' directory to 'qtile_backup'.
+  Retry the Installation.
+
+I hope this helps! 😊
 
 ## Acknowledgments 🙏
 thanks to the Qtile community for their support.
