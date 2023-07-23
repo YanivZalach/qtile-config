@@ -16,8 +16,8 @@ Before using this Qtile configuration, if you don't want to start configuring th
 - Thunar (file manager, can be replaced with your preferred file manager) 📂
 - Google Chrome (or any web browser of your choice) 🌐
 - Visual Studio Code (or any code editor of your choice) 💻
-- Noto Sans font (used for widgets) ✒️
-- Lilex Nerd Font Mono Regular font (used for widgets) 🖋️
+- Font Noto Sans font (used for widgets) ✒️
+- Font Lilex Nerd Font Mono Regular font (used for widgets) 🖋️
 - FPDF Python library (used for generating the keybindings PDF) 📚
 
 ## Installation 📦
