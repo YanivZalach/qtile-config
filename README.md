@@ -1,6 +1,14 @@
 # Qtile Configuration 🪟🚀
 
-This repository contains the configuration files for my Qtile setup, a tiling window manager for X11 written and configured in Python.
+Qtile is a lightweight, highly customizable, and user-friendly window manager (UI - user interface) for Linux. It empowers you to efficiently control and organize your desktop using Python scripts. 
+Dynamic tiling window managers, like Qtile, automatically adjust the arrangement of open windows in response to one another.
+
+What do we have here? My Qtile configuration file!
+
+Who can you use it? Anyone can use it!
+
+Who should use it? those who want to start learning about tiling window managers in Linux, as well as advanced users.
+
 
 ## Requirements 🛠️
 
