@@ -4,15 +4,14 @@ This repository contains the configuration files for my Qtile setup, a tiling wi
 
 ## Requirements 🛠️
 
-Before using this Qtile configuration, make sure you have the following programs installed on your system:
+Before using this Qtile configuration, if you don't want to start configuring the config file, make sure you have the following programs installed on your system:
 
 - Qtile (of course!) 🪶
 - Python (required for Qtile configuration) 🐍
-- Xorg (X Window System) 🖥️
 - Kitty (terminal emulator, can be replaced with other terminal emulators) 🐱
-- Alacritty (another terminal emulator option) 🍃
-- Terminator (yet another terminal emulator option) ⚙️
-- Zathura (PDF viewer, used for displaying keybindings) 📜
+- Alacritty (another terminal emulator option, can be canceled) 🍃
+- Terminator (yet another terminal emulator option, can be canceled) ⚙️
+- Zathura (PDF viewer, used for displaying keybindings, can be replaced with other PDF viewer) 📜
 - Rofi (application launcher and menu) 🚀
 - Thunar (file manager, can be replaced with your preferred file manager) 📂
 - Google Chrome (or any web browser of your choice) 🌐
