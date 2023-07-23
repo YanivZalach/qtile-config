@@ -29,11 +29,13 @@ Before using this Qtile configuration, make sure you have the following programs
 
 ```bash
 git clone https://github.com/YanivZalach/qtile.git ~/.config/qtile
+```
 
 Restart Qtile to apply the new configuration:
 
 ```bash
 Super + Shift + r
+```
 
 ## Usage 🚀
 
