@@ -1,6 +1,6 @@
 # Qtile Configuration 🪟🚀
 
-This repository contains the configuration files for Qtile, a tiling window manager for X11 written and configured in Python.
+This repository contains the configuration files for my Qtile setup, a tiling window manager for X11 written and configured in Python.
 
 ## Requirements 🛠️
 
@@ -31,23 +31,20 @@ Before using this Qtile configuration, make sure you have the following programs
 git clone https://github.com/YanivZalach/qtile.git ~/.config/qtile
 ```
 
-Restart Qtile to apply the new configuration:
+Restart Qtile to apply the new configuration by pressing:
 
-```bash
-Super + Shift + r
+```
+Super + control + r
 ```
 
 ## Usage 🚀
 
-Use keybindings to navigate and control the window manager efficiently.
-Check the keybindings in the generated Mqtile.pdf file for a quick reference.
-Enjoy using Qtile with your customized configuration!
+Use keybindings to navigate and control the window manager efficiently. 
+Check the keybindings in the generated Mqtile.pdf file for a quick reference, by clicking on the date widget in the bar,
+or by pressing:
 
-## Customization 🎨
-
-Feel free to customize this configuration to suit your workflow and preferences. Modify the keybindings, add new widgets, or change the appearance as you see fit.
-
-Acknowledgments 🙏
-thanks to the Qtile community for their support.
+```
+Super + Shift + i 
+```
 
 Happy tiling! 🪶💻🐍
