@@ -1,6 +1,6 @@
 # Qtile Configuration 🪟🚀
 
-Qtile is a lightweight, highly customizable, and user-friendly window manager (UI - user interface) for Linux. It empowers you to efficiently control and organize your desktop using Python scripts. 
+[Qtile](https://github.com/qtile/qtile) is a lightweight, highly customizable, and user-friendly window manager (UI - user interface) for Linux. It empowers you to efficiently control and organize your desktop using Python scripts. 
 Dynamic tiling window managers, like Qtile, automatically adjust the arrangement of open windows in response to one another.
 
 What do we have here? My Qtile configuration file!
