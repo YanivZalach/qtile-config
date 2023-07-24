@@ -26,24 +26,20 @@ mod = "mod4"
 
 # Guess the terminal to be used (default terminal if not specified)
 terminal = guess_terminal()
-
+#The user home path
+home = os.path.expanduser('~')
 # Function to run at startup once. It is used to run commands specified in the 'autostart.sh'
 @hook.subscribe.startup_once
 def start_once():
-    home = os.path.expanduser('~')
     subprocess.call([home + '/.config/qtile/autostart.sh'])
         
 # Define the key bindings
 keys = [
-
-    # A list of available commands that can be bound to keys can be found
-    # at https://docs.qtile.org/en/latest/manual/config/lazy.html
-
     # Launches Zathura with a specific PDF file
-    Key([mod,"shift"],"i", lazy.spawn("setsid zathura /home/yaniv/Mqtile.pdf"),desc="Info system keybindings"),
+    Key([mod,"shift"],"i", lazy.spawn("setsid zathura ~/Mqtile.pdf"),desc="Info system keybindings"),
     
     # Shutdown or reboot the PC using a custom bash script
-    Key([mod, "shift"], "x", lazy.spawn("/home/yaniv/.config/qtile/bash_scripts/ro_sd.sh"), desc="Shutdown || Reboot"),
+    Key([mod, "shift"], "x", lazy.spawn(f'{home}/.config/qtile/bash_scripts/ro_sd.sh'), desc="Shutdown || Reboot"),
     
     # Switch between US and IL keyboard layouts
     Key(["mod1"],"shift_L",  lazy.widget["keyboardlayout"].next_keyboard(), desc="Keyboard layout (US || IL)"),
@@ -193,7 +189,9 @@ def init_groups():
     """
     return [Group(name, **kwargs) for name, kwargs in group_names]
 
+# When the script is run as the main window manager configuration, not the main itself
 if __name__ in ["config", "__main__"]:
+    # Set up group names and create Group objects
     group_names = init_group_names()
     groups = init_groups()
 
@@ -221,6 +219,18 @@ widget_defaults = dict(
     padding=15,
 )
 extension_defaults = widget_defaults.copy()
+
+
+# Function to set the wallpaper based on the user's home path
+def myWallpaper():
+    # Check if the home directory path is '/home/yaniv' (the creator of the config)
+    if(home == "/home/yaniv"):
+        # If the user is 'yaniv' (the creator of the code),
+        # return the desired wallpaper path for personal use
+        return f"{home}/Pictures/b_g/jjforestbird_switzerland.jpg"
+    # If the user is not 'yaniv' (new user cloning the repo),
+    # set the wallpaper to a default one for a pleasant initial experience
+    return f"{home}/.config/qtile/dmirlea_norway.jpg"
 
 
 screens = [
@@ -306,7 +316,7 @@ screens = [
                                 padding = 5,
                                 ),
 
-                        # Commented out Battery widget (uncomment to use)       
+                        # Commented out Battery widget (uncomment to use in a laptop)     
                         #    widget.TextBox(# Widget to display text
                         #        font="Noto Sans",
                         #        text="Battery:",
@@ -333,18 +343,18 @@ screens = [
                                 format="%Y-%m-%d %a %H:%M",
                                 foreground='#ffffff',
                                 font = "Noto Sans Bold",
-                                mouse_callbacks={'Button1':lazy.spawn("setsid zathura /home/yaniv/Mqtile.pdf")}
+                                mouse_callbacks={'Button1':lazy.spawn(f"setsid zathura {home}/Mqtile.pdf")}
                                 ),
                             
 
                         ],
                         27,
-                        background='#2f9fb5',#'#3e97b0',  # Set the background color of the bar
+                        background='#2f9fb5', # Set the background color of the bar
                         opacity=0.8,            # Set the opacity of the bar (optional)
                     ),
                     # Set the wallpaper path
-                    wallpaper='/home/yaniv/Pictures/b_g/jjforestbird_switzerland.jpg',#/home/yaniv/.config/qtile/dmirlea_norway.jpg
-                    wallpaper_mode='fill',# Set the wallpaper mode
+                    wallpaper=myWallpaper(), # Call the function to set the window wallpaper
+                    wallpaper_mode='fill', # Set the wallpaper mode
                 ),
             ]
 
@@ -397,7 +407,7 @@ auto_minimize = True
 # When using the Wayland backend, this can be used to configure input devices.
 wl_input_rules = None
 
-# We choose LG3D to maximize irony: it is a 3D non-reparenting WM written in
+# LG3D: it is a 3D non-reparenting WM written in
 # java that happens to be on java's whitelist.
 wmname = "LG3D"
 

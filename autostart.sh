@@ -23,7 +23,7 @@ picom --config $HOME/.config/qtile/picom.conf &
 
 
 #starting user applications at boot time
-run chrome &
+#run google-chrome-stable &
 #run volumeicon &
 # run thunar &  # Start Thunar file manager
 
