@@ -1,5 +1,6 @@
 # Qtile Configuration 🪟🚀
 
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
 [Qtile](https://github.com/qtile/qtile) is a lightweight, highly customizable, and user-friendly window manager (UI - user interface) for Linux. It empowers you to efficiently control and organize your desktop using Python scripts. 
 Dynamic tiling window managers, like Qtile, automatically adjust the arrangement of open windows in response to one another.
@@ -67,7 +68,6 @@ or by pressing:
 ```
 Super + shift + i 
 ```
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
 ## Troubleshooting 🔧
 
