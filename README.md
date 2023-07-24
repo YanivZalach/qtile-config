@@ -94,6 +94,23 @@ The installation is not working:
   This will rename the existing 'qtile' directory to 'qtile_backup'.
   Retry the Installation.
 
+Don't see a background?
+* Check if your system path is /home/yaniv. Open the terminal and run the following command to check:
+  ```bash
+  pwd
+  ```
+  If the path is /home/yaniv, run the following command in the terminal:
+  ```bash
+  nano ~/.config/qtile/config.py
+  ```
+  Find the myWallpaper() function and replace it with the one below:
+  
+  ```
+  def myWallpaper():
+    return f"{home}/.config/qtile/dmirlea_norway.jpg"
+  ```
+  Save the changes, then restart Qtile to apply the new updates.
+
 I hope this helps! 😊
 
 ## Acknowledgments 🙏
