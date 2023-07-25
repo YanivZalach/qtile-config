@@ -19,6 +19,7 @@ Before using this Qtile configuration, if you don't want to start configuring th
 
 - Qtile (of course!) 🪶
 - Python (required for Qtile configuration) 🐍
+- Picom (to allow applications to be transparent) ✨
 - Kitty (terminal emulator, can be replaced with other terminal emulators) 🐱
 - Alacritty (another terminal emulator option, can be canceled) 🍃
 - Terminator (yet another terminal emulator option, can be canceled) ⚙️
