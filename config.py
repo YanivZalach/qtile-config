@@ -164,6 +164,18 @@ def Mqtile_info(keys):
     pdf.output("Mqtile.pdf") # Save the PDF with name 'Mqtile.pdf'
 
 
+
+# Function to set the Home Grop based on the user's home path
+def myHomeGroup():
+    # Check if the home directory path is '/home/yaniv' (the creator of the config)
+    if(home == "/home/yaniv"):
+        # If the user is 'yaniv' (the creator of the code),
+        # return the desired Home Grop for personal use
+        return "Y4Z"
+    # If the user is not 'yaniv' (new user cloning the repo),
+    # set the Home Grop to a default one for a pleasant initial experience
+    return "Home"
+
 #layout of windows
 layout_in_init='Max'
 def init_group_names():
@@ -174,7 +186,7 @@ def init_group_names():
         Modify the 'layout_in_init' variable to change the default layout for all groups.
     """
     return [
-        ("Y4Z",{'layout':layout_in_init}),
+        (myHomeGroup(),{'layout':layout_in_init}),
         ("Terminal",{'layout':layout_in_init}),
         ("www",{'layout':layout_in_init}),
         ("Code",{'layout':layout_in_init}),

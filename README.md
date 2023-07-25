@@ -7,7 +7,7 @@ Dynamic tiling window managers, like Qtile, automatically adjust the arrangement
 
 What do we have here? My Qtile configuration file!
 
-Who can you use it? Anyone can use it!
+Who can use it? Anyone can use it!
 
 Who should use it? those who want to start learning about tiling window managers in Linux, as well as advanced users.
 
@@ -94,7 +94,7 @@ The installation is not working:
   This will rename the existing 'qtile' directory to 'qtile_backup'.
   Retry the Installation.
 
-Don't see a background?
+Don't see a background? / See something other than "Home" in the first group?
 * Check if your system path is /home/yaniv. Open the terminal and run the following command to check:
   ```bash
   pwd
@@ -109,6 +109,14 @@ Don't see a background?
   def myWallpaper():
     return f"{home}/.config/qtile/dmirlea_norway.jpg"
   ```
+
+  Find the myHomeGroup() function and replace it with the one below:
+  
+  ```
+  def myHomeGroup():
+    return "Home"
+  ```
+
   Save the changes, then restart Qtile to apply the new updates.
 
 I hope this helps! 😊
