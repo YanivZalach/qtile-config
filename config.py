@@ -239,7 +239,7 @@ def myWallpaper():
     if(home == "/home/yaniv"):
         # If the user is 'yaniv' (the creator of the code),
         # return the desired wallpaper path for personal use
-        return f"{home}/Pictures/b_g/jjforestbird_switzerland.jpg"
+        return f"{home}/Pictures/b_g/suuny_day.png"
     # If the user is not 'yaniv' (new user cloning the repo),
     # set the wallpaper to a default one for a pleasant initial experience
     return f"{home}/.config/qtile/dmirlea_norway.jpg"
