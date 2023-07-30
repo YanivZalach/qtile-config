@@ -65,7 +65,7 @@ keys = [
     Key([mod], "e", lazy.spawn("thunar"), desc="Thunar file manager"),
     Key([mod], "i", lazy.spawn("/usr/bin/google-chrome-stable"), desc="Google Chrome"),
     Key([mod], "v", lazy.spawn("code"), desc="VS code"),
-    Key([mod], "d", lazy.spawn("gvim"), desc="Vim"),
+    Key([mod, "shift"], "v", lazy.spawn("gvim"), desc="Vim"),
     
     # Toggle between different layouts or fullscreen
     Key([mod], "f", lazy.next_layout(), desc="Toggle tiling or fullscreen"),
