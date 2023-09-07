@@ -63,7 +63,7 @@ keys = [
     
     # Launch commonly used applications
     Key([mod], "e", lazy.spawn("thunar"), desc="Thunar file manager"),
-    Key([mod], "i", lazy.spawn("/usr/bin/google-chrome-stable"), desc="Google Chrome"),
+    Key([mod], "i", lazy.spawn("brave"), desc="Brave web browser"),    # chrome -> /usr/bin/google-chrome-stable
     Key([mod], "v", lazy.spawn("code"), desc="VS code"),
     Key([mod, "shift"], "v", lazy.spawn("gvim"), desc="Vim"),
     
