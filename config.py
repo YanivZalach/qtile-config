@@ -23,6 +23,7 @@ from fpdf import FPDF
 
 # Define the modifier key (mod key) for keybindings
 mod = "mod4"
+alt = "mod1"
 
 # Guess the terminal to be used (default terminal if not specified)
 terminal = guess_terminal()
@@ -51,10 +52,11 @@ keys = [
     
     # Close the focused window
     Key([mod], "c", lazy.window.kill(), desc="Close focused window"),
+    Key([alt], "f4", lazy.window.kill(), desc="Close focused window (window style)"),
     
     # Launch different rofi menus for application, commands, windows, and ssh
-    Key([mod], "p", lazy.spawn("rofi -show drun"), desc="Launch rofi dmenu (all apps)"),
-    Key([mod], "r", lazy.spawn("rofi -show run"), desc="Launch rofi menu (commands)"),
+    Key([mod], "r", lazy.spawn("rofi -show drun"), desc="Launch rofi dmenu (all apps)"),
+    Key([mod], "p", lazy.spawn("rofi -show run"), desc="Launch rofi menu (commands)"),
     Key([mod], "w", lazy.spawn("rofi -show window"), desc="Launch rofi windows (active windows)"),
     Key([mod], "s", lazy.spawn("rofi -show ssh"), desc="Launch rofi ssh"),
     
