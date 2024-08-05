@@ -43,7 +43,7 @@ keys = [
     Key([mod, "shift"], "x", lazy.spawn(f'{home}/.config/qtile/bash_scripts/ro_sd.sh'), desc="Shutdown || Reboot"),
     
     # Switch between US and IL keyboard layouts
-    Key(["mod1"],"shift_L",  lazy.widget["keyboardlayout"].next_keyboard(), desc="Keyboard layout (US || IL)"),
+    Key([alt],"shift_L",  lazy.widget["keyboardlayout"].next_keyboard(), desc="Keyboard layout (US || IL)"),
     
     # Terminal emulators
     Key([mod], "t", lazy.spawn("kitty"), desc="Terminal kitty -> bash"),
